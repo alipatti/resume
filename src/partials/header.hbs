@@ -1,0 +1,16 @@
+{{#with info}}
+<header class="flex flex-col gap-4">
+  <h1 class="text-6xl small-caps font-bold tracking-wide text-center">{{name}}</h1>
+  <ul id="contact" class="text-sm flex gap-5 justify-center">
+    {{#each contact}}
+    <li>
+      <a href="{{this.url}}">
+        <i class="{{this.icon}} inline-block mr-1"></i>
+        <span class="inline-block text-sm">{{this.value}}</span>
+      </a>
+    </li>
+    {{/each}}
+  </ul>
+</header>
+
+{{/with}}

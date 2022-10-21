@@ -1,0 +1,52 @@
+/* FONTS */
+
+/* Latin Modern */
+@import url("http://fonts.cdnfonts.com/css/latin-modern-roman");
+/* Karla */
+@import url("https://fonts.googleapis.com/css2?family=family=Karla:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,700&display=swap");
+
+/* ICONS */
+
+/* @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"); */
+@import url("https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css");
+
+/* TAILWIND */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  font-family: "Karla", "serif";
+  /* font-family: "LMRoman10", "Times New Roman", Times, serif; */
+}
+
+.small-caps {
+  font-family: "LMRomanCaps10";
+}
+
+[class^="ri-"],
+[class*=" ri-"] {
+  translate: 0 0.15em;
+}
+
+@media print {
+  :root {
+    font-size: 10pt;
+  }
+  body {
+    padding: 1in;
+    height: 11in;
+    width: 8.5in;
+  }
+}
+
+@media screen {
+  body {
+    border: 1px solid grey;
+    box-sizing: content-box;
+    padding: 1in;
+    max-width: 8.5in;
+    margin: 5rem auto;
+  }
+}

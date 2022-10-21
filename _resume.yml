@@ -1,0 +1,139 @@
+info:
+  name: Alistair Pattison
+  contact:
+    - value: (651) 706 6713
+      icon: ri-cellphone-fill
+      url: tel:6517066713
+    - value: pattisona@carleton.edu
+      icon: ri-mail-line
+      url: mailto:pattisona@carleton.edu?subject=sick%20resume!
+  links:
+    - value: alipatti.com
+      icon: ri-earth-line
+      url: https://alipatti.com
+    - value: /alipatti
+      icon: ri-github-fill
+      url: https://github.com/alipatti
+    - value: /in/alipatti
+      icon: ri-linkedin-fill
+      url: https://linkedin.com/in/alipatti
+
+sections:
+  education:
+    - title: Bachelor of Arts
+      subtitle: Mathematics
+      institution: Carleton College
+      location: Northfield, Minnesota
+      startDate: 2020-09
+      endDate: 2024-06
+      summary: a summary
+      bullets:
+        - Dean's List
+        - 3.98 GPA
+        - National Merit Scholarship
+        - Digital Arts and Humanities minor
+      courses:
+        - Real Analysis I - MATH XXX
+        - Combinatorics - MATH 333
+        - Abstract Algebra - MATH XXX
+        - Representation Theory  - MATH 352
+        - Analytic Number Theory - MATH 395
+        - Algorithms - CS 252
+        - Advanced Algorithms - CS 352
+        - Cryptography - CS XXX
+        - Natural Language Processing - CS XXX
+        - Quantum Computing - CS XXX
+        - Artificial Intelligence - CS XXX
+        - Data Visualization - CS XXX
+
+    - title: History of Computing
+      institution: Carleton College Off Campus Studies
+      location: Cambridge, England
+      startDate: 2022-06
+      endDate: 2022-08
+      summary:
+        Studied modern cryptography, British WWII history, and the history of computing through an interdisciplinary program at the University of Cambridge.
+
+    - title: Talented Youth Mathematics Program
+      institution: University of Minnesota
+      startDate: 2015-09
+      endDate: 2020-05
+      location: Minneapolis, Minnesota
+      summary:
+        Completed selective high school math program culminating in six semesters of undergraduate level linear algebra, vector calculus, differential equations, and set theory.
+
+  work:
+    - title: Researcher
+      subtitle: Privacy and Cryptography Lab
+      institution: University of Minnesota
+      location: Minneapolis, Minnesota
+      startDate: 2022-09
+      endDate: 2022-12
+      summary: Strengthened recent results in cryptography involving content moderation in end-to-end encrypted messaging services.
+      bullets:
+        - Removed assumption that the moderator and platform act semi-honestly and proved the system's security against additional threat models.
+        - Implemented improvements in Rust and benchmarked the implementation against existing systems (source on github).
+        - Presented results at ...
+
+    - title: Teaching Assistant
+      subtitle: Mathematics and Computer Science Departments
+      institution: Carleton College
+      location: Northfield, Minnesota
+      startDate: 2021-03
+
+      summary: 
+      bullets:
+        - Prepare and lead twice-a-week study sessions in which I review material from class, tutor students one-on-one, and give help on assignments.
+        - Grade homework for up to 34 students and help address weak areas by tailoring study sessions or writing sample solutions.
+      courses:
+        - Calculus II - MATH 120
+        - Math Structures - MATH 236
+        - Algorithms - CS 252
+        - Artificial Intelligence - CS 321
+        - Data Visualization - CS XXX
+
+    - title: "'The Food Guy'"
+      institution: YMCA Camp Widjiwagan
+      location: Ely, Minnesota
+      startDate: 2021-06
+      endDate: 2021-08
+
+      summary: Managed the purchase and distribution of food for nearly 200 multi-week wilderness trips across five US states and four Canadian provinces.
+      bullets:
+        - Lead a week-long canoeing trip with Boys Outdoor Leadership Development, a program geared towards making the outdoors more diverse and financially accessible.
+        - Supervised up to four other employees in fast-paced environment.
+        - Collaborated closely in a team of three to ensure all outgoing groups' needs were met.
+
+  projects:
+    - title: Ole or Carl?
+      summary: A machine learning model which classifies St. Olaf and Carleton students with nearly 70 percent accuracy and a web-app which publishes an "ole-score" for every Carleton and Olaf student.
+      bullets:
+        - Originally built as a joke to refute claims that I look like an Ole and test the validity of a long-standing stereotype that students from the two colleges look meaningfully different.
+        - Under the hood the model uses a linear support-vector classifier on vector embeddings of students' faces.
+        - Training data was taken from each college's directory and LinkedIn.
+      keywords: [machine learning, scikit-learn, python, SVM, web scraping]
+      startDate: 2022-05
+      endDate: 2022-06
+      links:
+        source: https://github.com/alipatti/oleorcarl
+        web-app: https://github.com/alipatti/oleorcarl
+
+    - title: Chirple
+      summary: Get made fun of while playing Wordle against a robot making provably optimal decisions.
+      bullets:
+        - This project was built as a joke to test the validity of a long-standing stereotype.
+        - Under the hood the model uses a support vector classifier trained on 128-dimensional vector embeddings of student id portraits
+        - Hyper-parameters for the model were selected with ???
+      keywords: [machine learning, scikit-learn, python, SVM, web scraping]
+      startDate: 2022-05
+      endDate: 2022-06
+      url: https://github.com/alipatti/chirple
+
+  interests:
+    - title: Running
+      summary:
+        Member of Carleton varsity Track and Field.
+      bullets:
+        - Three-time MIAC conference finalist at 800m; two-time second-team all-conference; four-time academic all-conference.
+        - Minnesota state-meet qualifier, 2019.
+    - title: Photography

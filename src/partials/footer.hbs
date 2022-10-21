@@ -1,0 +1,14 @@
+{{#with info}}
+<footer>
+  <ul id="links" class="flex gap-8 mx-auto justify-center">
+    {{#each links}}
+    <li>
+      <a href="{{this.url}}">
+        <i class="{{this.icon}} inline-block mr-1"></i>
+        <span class="inline-block text-sm">{{this.value}}</span>
+      </a>
+    </li>
+    {{/each}}
+  </ul>
+</footer>
+{{/with}}
