@@ -1,12 +1,13 @@
 {
   "license": "MIT",
   "scripts": {
-    "buildHTML": "npx yaml2json _resume.yml | npx hbs --partial './src/partials/**/*.hbs' --helper './src/helpers/dateFormat.js' -i -o dist -- src/resume.hbs",
+    "buildHTML": "npx yaml2json _resume.yml | npx hbs --partial './src/partials/**/*.hbs' --helper './src/helpers/dateFormat.js' -i -o dist -- src/index.hbs",
     "buildTailwind": "npx tailwindcss -i ./src/styles.css -o ./dist/styles.css",
     "build": "yarn run buildHTML && yarn run buildTailwind",
     "watch": "(npx onchange -i '*resume.yml' 'src/**/*' -- yarn run buildHTML) & (yarn run buildTailwind --watch)",
-    "serve": "cd dist && npx live-server --open=resume.html",
-    "dev": "(yarn run serve) & (yarn run watch)"
+    "serve": "cd dist && npx live-server --open=index.html",
+    "dev": "(yarn run serve) & (yarn run watch)",
+    "deploy": "git subtree"
   },
   "dependencies": {
     "hbs-cli": "^1.4.1",

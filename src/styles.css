@@ -28,6 +28,7 @@ html {
 [class^="ri-"],
 [class*=" ri-"] {
   translate: 0 0.15em;
+  display: inline-block;
 }
 
 @media print {
