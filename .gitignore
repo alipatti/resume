@@ -1,9 +1,5 @@
 node_modules
 
-# used by `npx resume serve`
-
-.vscode
-
-resume.yml
+*.log
 
 .DS_Store
