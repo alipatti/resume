@@ -7,7 +7,7 @@
     "watch": "(npx onchange -i '*resume.yml' 'src/**/*' -- yarn run buildHTML) & (yarn run buildTailwind --watch)",
     "serve": "cd dist && npx live-server --open=index.html",
     "dev": "(yarn run serve) & (yarn run watch)",
-    "deploy": "git subtree"
+    "deploy": "git subtree push --prefix dist origin gh-pages"
   },
   "dependencies": {
     "hbs-cli": "^1.4.1",
