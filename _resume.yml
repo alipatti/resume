@@ -33,36 +33,43 @@ sections:
         - Representation Theory  - MATH 352
         - Analytic Number Theory - MATH 395
         - Algorithms - CS 252
-        - Advanced Algorithms - CS 352
-        - Cryptography - CS 341
-        - Natural Language Processing - CS 322
-        - Quantum Computing - CS 358
         - Artificial Intelligence - CS 321
-        - Data Visualization - CS XXX
+        - Natural Language Processing - CS 322
+        - Cryptography - CS 341
+        - Advanced Algorithms - CS 352
+        - Quantum Computing - CS 358
+        # - Data Visualization - CS XXX
+        - Labor Economics - ECON 274
+        - Public-sector Economics - ECON 27?
+        # - Price Theory - ECON ???
 
     - title: History of Computing
       institution: Carleton College Off Campus Studies
       location: Cambridge, England
       date: [2022-06, 2022-08]
-      summary: Studied modern cryptography, British WWII history, and the history of computing through an interdisciplinary program at the University of Cambridge.
+      summary: Studied modern cryptography, British WWII history, and the history of computing through an interdisciplinary program based at the University of Cambridge.
 
     - title: Talented Youth Mathematics Program
       institution: University of Minnesota
       date: [2015-09, 2020-05]
       location: Minneapolis, Minnesota
-      summary: Completed selective high school math program culminating in six semesters of undergraduate level linear algebra, vector calculus, differential equations, and set theory.
+      summary: Completed selective high-school math program culminating in six semesters of linear algebra, vector calculus, differential equations, and set theory.
 
   work:
     - title: Researcher
       subtitle: Privacy and Cryptography Lab
       institution: University of Minnesota
       location: Minneapolis, Minnesota
-      date: [2022-09, 2022-12]
-      summary: Strengthened recent results in cryptography involving content moderation in end-to-end encrypted messaging services.
+      date: [2022-09, null]
+      summary: Extend recent results in cryptography involving message-reporting in end-to-end encrypted messaging services. Supervised by Professor Nicholas Hopper.
       bullets:
-        - Removed assumption that the moderator and platform act semi-honestly and proved the system's security against additional threat models.
-        - Implemented improvements in Rust and benchmarked the implementation against existing systems (source on github).
-        - Presented results at ...
+        - Removed assumptions of moderator honesty by implementing a committee moderation system based on distributed Schnorr signatures and threshold ElGamal encryption.
+        # - Removed the platform's responsibility while retaining all the security guarantees of previous papers, meaning that my system can be implemented today on top of vanilla Signal or WhatsApp with no modification of the underlying EEMS.
+        # - Implemented improvements in Rust and benchmarked the implementation against the protocols described in previous works.
+        # - Preprint available at ??? (submitted to ???, ???).
+      links:
+        - implementation: https://github.com/alipatti/hecate
+        - preprint: null
 
     - title: Teaching Assistant
       subtitle: Mathematics and Computer Science Departments
@@ -84,49 +91,50 @@ sections:
 
       summary: Managed the purchase and distribution of food for nearly 200 multi-week wilderness trips across five US states and four Canadian provinces.
       bullets:
-        - Lead a week-long canoeing trip with Boys Outdoor Leadership Development, a program geared towards making the outdoors more diverse and financially accessible.
         - Supervised up to four other employees in fast-paced environment.
+        - Lead a week-long canoeing trip with Boys Outdoor Leadership Development, a program geared towards making the outdoors more diverse and financially accessible.
         - Collaborated closely in a team of three to ensure all outgoing groups' needs were met.
 
   projects:
     - title: Ole or Carl?
-      summary: A machine learning model which classifies St. Olaf and Carleton students with 67 percent accuracy based exclusively on headshots.
+      summary: A machine learning model which classifies St. Olaf and Carleton students with 67 percent accuracy based exclusively on faces.
       bullets:
         - Originally built as a joke to refute claims that I look like an Ole and test the validity of a long-standing stereotype that students from the two colleges look meaningfully different.
         - Under the hood the model uses a linear support-vector classifier on vector embeddings of students' faces.
-        - The final product is a web-app in which students can see theirs and their friends' 'Ole scores'–a hand-wavey metric loosely based on one's distance from the decision boundary.
+        - The final product is a web-app in which students can see theirs and their friends' 'Ole scores'–a hand-wavey metric loosely based on one's distance from the model's decision boundary.
         - Training data was taken from each college's directory and LinkedIn.
-      keywords: [machine learning, scikit-learn, python, SVM, web scraping]
+      keywords: [machine learning, vector embeddings, SVM, web scraping]
       date: [2022-05, 2022-06]
       links:
         source: https://github.com/alipatti/oleorcarl
         web-app: https://github.com/alipatti/oleorcarl
 
     - title: Chirple
-      summary: Play Wordle head-to-ahead against a bot which simultaneously encourages you and makes fun of you for your bad guesses.
+      summary: Play Wordle head-to-head against a bot that makes fun of you for your bad guesses.
       bullets:
-        - Chirple makes the guess which yields the most expected bits information and makes fun of you if you don't.
-        - The roasts are taken from ???
-        - Under some reasonable assumptions about the words Wordle picks, its guesses can be proven 'optimal' (in some sense of the word).
-      keywords: [information theory, numpy, python]
+        - Chirple makes the guess which yields the most expected information and makes fun of you if you don't.
+        - Under some reasonable assumptions, its guesses can be proven 'optimal' (in some sense of the word).
+      keywords: [information theory, numpy, python, Flask]
       date: [2022-05, 2022-06]
       links:
         source: https://github.com/alipatti/chirple
 
     - title: JFRRS
-      summary: Introduce the world to the fantasy sport they didn't know they needed NCAA Division III cross-country.
+      summary: "NCAA Division III cross-country: The fantasy sport people didn't know they needed"
       bullets:
-        - Scrapes up-to-date XC results and allows users to create teams and compete with their friends.
-        - Scoring is calculated based on a mix of raw times and relative performance.
-        - Built with full-stack TypeScript using NextJS, tRPC, tailwindcss,Prisma, and Vercel.
+        - The world's <strong>first</strong> fantasy XC platform.
+        - Scrapes up-to-date XC results as soon as they're available and stores them in a relational database.
+        - Scoring is calculated based on a mix of athletes' raw times and placement.
+        - Built with full-stack TypeScript using NextJS, Prisma, tRPC, tailwindcss, React.
       links:
         source: https://github.com/alipatti/jfrrs
+        JFRRS (coming soon): null
       date: null
 
     - title: Resume
       summary: You're looking at it.
       bullets:
-        - Loads data from a yaml file, allowing for easy updates without worrying about how they will affect layout. 
+        - Loads data from a yaml file, allowing for easy updates without worrying about how they will affect layout.
         - Allows for flexible presentation of skills and experience. Notice how only some of the sections have bullets or links?
         - Formats differently for web and print. (Try hitting cmd + p!)
 
@@ -138,7 +146,7 @@ sections:
         - Minnesota state-meet qualifier, 2019.
 
     - title: Photography
-    # TODO add bullets linking to photos 
+    # TODO add bullets linking to photos
 
     - title: Piano
 

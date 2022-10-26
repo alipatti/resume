@@ -6,7 +6,7 @@
   <title>Resume - Alistair Pattison</title>
 </head>
 
-<body>
+<body class="p-24 print:p-[1in] mx-auto m-24 print:m-0 border print:border-none border-gray-300 max-w-5xl">
 
     <header class="flex flex-col gap-4">
       <h1 class="text-6xl small-caps font-bold tracking-wide text-center">Alistair Pattison</h1>
@@ -27,13 +27,14 @@
     </header>
     
     <hr class="w-3/4 mx-auto my-3" />
+
       
       <section class="mt-10 grid gap-4">
         <div class="-ml-4">
           <h2 class="text-3xl font-bold capitalize small-caps">education</h2>
           <hr class="mt-3 w-1/4" />
         </div>
-          <div class="border-left-2 group transition-all cursor-pointer group-focus:cursor-default" tabindex="0">
+          <div class="border-left-2 group transition-all no-break" tabindex="0">
       
             <div class="grid">
               <h3 class="row-start-1 text-xl">
@@ -55,9 +56,9 @@
             <p class="italic">3.98 GPA, Dean&#x27;s List, National Merit Scholarship, public policy minor, digital arts and humanities minor.</p>
       
             <div
-              class="max-h-0 overflow-clip pl-3 duration-500 group-focus:max-h-[25vh]"
+              class="max-h-0 print:max-h-screen overflow-clip pl-3 duration-500 group-focus:max-h-[25vh]"
             >
-              <ul class="mb-3 flex justify-center divide-x">
+              <ul class="print:hidden mb-3 flex justify-center divide-x">
               </ul>
               <ul class="list-['-']">
                   <li class="ml-2 pl-3">Real Analysis I - MATH 321</li>
@@ -66,23 +67,24 @@
                   <li class="ml-2 pl-3">Representation Theory  - MATH 352</li>
                   <li class="ml-2 pl-3">Analytic Number Theory - MATH 395</li>
                   <li class="ml-2 pl-3">Algorithms - CS 252</li>
-                  <li class="ml-2 pl-3">Advanced Algorithms - CS 352</li>
-                  <li class="ml-2 pl-3">Cryptography - CS 341</li>
-                  <li class="ml-2 pl-3">Natural Language Processing - CS 322</li>
-                  <li class="ml-2 pl-3">Quantum Computing - CS 358</li>
                   <li class="ml-2 pl-3">Artificial Intelligence - CS 321</li>
-                  <li class="ml-2 pl-3">Data Visualization - CS XXX</li>
+                  <li class="ml-2 pl-3">Natural Language Processing - CS 322</li>
+                  <li class="ml-2 pl-3">Cryptography - CS 341</li>
+                  <li class="ml-2 pl-3">Advanced Algorithms - CS 352</li>
+                  <li class="ml-2 pl-3">Quantum Computing - CS 358</li>
+                  <li class="ml-2 pl-3">Labor Economics - ECON 274</li>
+                  <li class="ml-2 pl-3">Public-sector Economics - ECON 27?</li>
               </ul>
             </div>
       
-              <div class="flex w-full justify-center text-gray-500">
+              <div class="print:hidden flex w-full justify-center text-gray-500">
                 <i
                   class="ri-arrow-down-s-line block scale-x-[2] scale-y-[.7] duration-700 group-hover:animate-pulse group-focus:rotate-180"
                 ></i>
               </div>
       
           </div>
-          <div class="border-left-2 group transition-all " tabindex="0">
+          <div class="border-left-2 group transition-all no-break" tabindex="0">
       
             <div class="grid">
               <h3 class="row-start-1 text-xl">
@@ -101,12 +103,12 @@
               </span>
             </div>
       
-            <p class="italic">Studied modern cryptography, British WWII history, and the history of computing through an interdisciplinary program at the University of Cambridge.</p>
+            <p class="italic">Studied modern cryptography, British WWII history, and the history of computing through an interdisciplinary program based at the University of Cambridge.</p>
       
             <div
-              class="max-h-0 overflow-clip pl-3 duration-500 group-focus:max-h-[25vh]"
+              class="max-h-0 print:max-h-screen overflow-clip pl-3 duration-500 group-focus:max-h-[25vh]"
             >
-              <ul class="mb-3 flex justify-center divide-x">
+              <ul class="print:hidden mb-3 flex justify-center divide-x">
               </ul>
               <ul class="list-['-']">
               </ul>
@@ -114,7 +116,7 @@
       
       
           </div>
-          <div class="border-left-2 group transition-all " tabindex="0">
+          <div class="border-left-2 group transition-all no-break" tabindex="0">
       
             <div class="grid">
               <h3 class="row-start-1 text-xl">
@@ -133,12 +135,12 @@
               </span>
             </div>
       
-            <p class="italic">Completed selective high school math program culminating in six semesters of undergraduate level linear algebra, vector calculus, differential equations, and set theory.</p>
+            <p class="italic">Completed selective high-school math program culminating in six semesters of linear algebra, vector calculus, differential equations, and set theory.</p>
       
             <div
-              class="max-h-0 overflow-clip pl-3 duration-500 group-focus:max-h-[25vh]"
+              class="max-h-0 print:max-h-screen overflow-clip pl-3 duration-500 group-focus:max-h-[25vh]"
             >
-              <ul class="mb-3 flex justify-center divide-x">
+              <ul class="print:hidden mb-3 flex justify-center divide-x">
               </ul>
               <ul class="list-['-']">
               </ul>
@@ -146,13 +148,13 @@
       
       
           </div>
-      </section>  
+      </section>      
       <section class="mt-10 grid gap-4">
         <div class="-ml-4">
           <h2 class="text-3xl font-bold capitalize small-caps">work</h2>
           <hr class="mt-3 w-1/4" />
         </div>
-          <div class="border-left-2 group transition-all cursor-pointer group-focus:cursor-default" tabindex="0">
+          <div class="border-left-2 group transition-all no-break" tabindex="0">
       
             <div class="grid">
               <h3 class="row-start-1 text-xl">
@@ -167,32 +169,42 @@
               </h4>
       
               <span class="row-start-1 justify-self-end font-light">
-                October 2022 - January 2023
+                October 2022 - present
               </span>
             </div>
       
-            <p class="italic">Strengthened recent results in cryptography involving content moderation in end-to-end encrypted messaging services.</p>
+            <p class="italic">Extend recent results in cryptography involving message-reporting in end-to-end encrypted messaging services. Supervised by Professor Nicholas Hopper.</p>
       
             <div
-              class="max-h-0 overflow-clip pl-3 duration-500 group-focus:max-h-[25vh]"
+              class="max-h-0 print:max-h-screen overflow-clip pl-3 duration-500 group-focus:max-h-[25vh]"
             >
-              <ul class="mb-3 flex justify-center divide-x">
+              <ul class="print:hidden mb-3 flex justify-center divide-x">
+                  <li class="my-0 px-2 py-0">
+                    <a href="[object Object]">
+                      0
+                      <i class="ri-external-link-line"></i>
+                    </a>
+                  </li>
+                  <li class="my-0 px-2 py-0">
+                    <a href="[object Object]">
+                      1
+                      <i class="ri-external-link-line"></i>
+                    </a>
+                  </li>
               </ul>
               <ul class="list-['-']">
-                  <li class="ml-2 pl-3">Removed assumption that the moderator and platform act semi-honestly and proved the system&#x27;s security against additional threat models.</li>
-                  <li class="ml-2 pl-3">Implemented improvements in Rust and benchmarked the implementation against existing systems (source on github).</li>
-                  <li class="ml-2 pl-3">Presented results at ...</li>
+                  <li class="ml-2 pl-3">Removed assumptions of moderator honesty by implementing a committee moderation system based on distributed Schnorr signatures and threshold ElGamal encryption.</li>
               </ul>
             </div>
       
-              <div class="flex w-full justify-center text-gray-500">
+              <div class="print:hidden flex w-full justify-center text-gray-500">
                 <i
                   class="ri-arrow-down-s-line block scale-x-[2] scale-y-[.7] duration-700 group-hover:animate-pulse group-focus:rotate-180"
                 ></i>
               </div>
       
           </div>
-          <div class="border-left-2 group transition-all cursor-pointer group-focus:cursor-default" tabindex="0">
+          <div class="border-left-2 group transition-all no-break" tabindex="0">
       
             <div class="grid">
               <h3 class="row-start-1 text-xl">
@@ -214,9 +226,9 @@
             <p class="italic">Lead study sessions, hold office hours, tutor students, and grade homework for math and computer science classes.</p>
       
             <div
-              class="max-h-0 overflow-clip pl-3 duration-500 group-focus:max-h-[25vh]"
+              class="max-h-0 print:max-h-screen overflow-clip pl-3 duration-500 group-focus:max-h-[25vh]"
             >
-              <ul class="mb-3 flex justify-center divide-x">
+              <ul class="print:hidden mb-3 flex justify-center divide-x">
               </ul>
               <ul class="list-['-']">
                   <li class="ml-2 pl-3">Artificial Intelligence - CS 321</li>
@@ -226,14 +238,14 @@
               </ul>
             </div>
       
-              <div class="flex w-full justify-center text-gray-500">
+              <div class="print:hidden flex w-full justify-center text-gray-500">
                 <i
                   class="ri-arrow-down-s-line block scale-x-[2] scale-y-[.7] duration-700 group-hover:animate-pulse group-focus:rotate-180"
                 ></i>
               </div>
       
           </div>
-          <div class="border-left-2 group transition-all cursor-pointer group-focus:cursor-default" tabindex="0">
+          <div class="border-left-2 group transition-all no-break" tabindex="0">
       
             <div class="grid">
               <h3 class="row-start-1 text-xl">
@@ -255,31 +267,31 @@
             <p class="italic">Managed the purchase and distribution of food for nearly 200 multi-week wilderness trips across five US states and four Canadian provinces.</p>
       
             <div
-              class="max-h-0 overflow-clip pl-3 duration-500 group-focus:max-h-[25vh]"
+              class="max-h-0 print:max-h-screen overflow-clip pl-3 duration-500 group-focus:max-h-[25vh]"
             >
-              <ul class="mb-3 flex justify-center divide-x">
+              <ul class="print:hidden mb-3 flex justify-center divide-x">
               </ul>
               <ul class="list-['-']">
-                  <li class="ml-2 pl-3">Lead a week-long canoeing trip with Boys Outdoor Leadership Development, a program geared towards making the outdoors more diverse and financially accessible.</li>
                   <li class="ml-2 pl-3">Supervised up to four other employees in fast-paced environment.</li>
-                  <li class="ml-2 pl-3">Collaborated closely in a team of three to ensure all outgoing groups&#x27; needs were met.</li>
+                  <li class="ml-2 pl-3">Lead a week-long canoeing trip with Boys Outdoor Leadership Development, a program geared towards making the outdoors more diverse and financially accessible.</li>
+                  <li class="ml-2 pl-3">Collaborated closely in a team of three to ensure all outgoing groups' needs were met.</li>
               </ul>
             </div>
       
-              <div class="flex w-full justify-center text-gray-500">
+              <div class="print:hidden flex w-full justify-center text-gray-500">
                 <i
                   class="ri-arrow-down-s-line block scale-x-[2] scale-y-[.7] duration-700 group-hover:animate-pulse group-focus:rotate-180"
                 ></i>
               </div>
       
           </div>
-      </section>  
+      </section>      
       <section class="mt-10 grid gap-4">
         <div class="-ml-4">
           <h2 class="text-3xl font-bold capitalize small-caps">projects</h2>
           <hr class="mt-3 w-1/4" />
         </div>
-          <div class="border-left-2 group transition-all cursor-pointer group-focus:cursor-default" tabindex="0">
+          <div class="border-left-2 group transition-all no-break" tabindex="0">
       
             <div class="grid">
               <h3 class="row-start-1 text-xl">
@@ -297,12 +309,12 @@
               </span>
             </div>
       
-            <p class="italic">A machine learning model which classifies St. Olaf and Carleton students with 67 percent accuracy based exclusively on headshots.</p>
+            <p class="italic">A machine learning model which classifies St. Olaf and Carleton students with 67 percent accuracy based exclusively on faces.</p>
       
             <div
-              class="max-h-0 overflow-clip pl-3 duration-500 group-focus:max-h-[25vh]"
+              class="max-h-0 print:max-h-screen overflow-clip pl-3 duration-500 group-focus:max-h-[25vh]"
             >
-              <ul class="mb-3 flex justify-center divide-x">
+              <ul class="print:hidden mb-3 flex justify-center divide-x">
                   <li class="my-0 px-2 py-0">
                     <a href="https://github.com/alipatti/oleorcarl">
                       source
@@ -318,20 +330,20 @@
               </ul>
               <ul class="list-['-']">
                   <li class="ml-2 pl-3">Originally built as a joke to refute claims that I look like an Ole and test the validity of a long-standing stereotype that students from the two colleges look meaningfully different.</li>
-                  <li class="ml-2 pl-3">Under the hood the model uses a linear support-vector classifier on vector embeddings of students&#x27; faces.</li>
-                  <li class="ml-2 pl-3">The final product is a web-app in which students can see theirs and their friends&#x27; &#x27;Ole scores&#x27;–a hand-wavey metric loosely based on one&#x27;s distance from the decision boundary.</li>
-                  <li class="ml-2 pl-3">Training data was taken from each college&#x27;s directory and LinkedIn.</li>
+                  <li class="ml-2 pl-3">Under the hood the model uses a linear support-vector classifier on vector embeddings of students' faces.</li>
+                  <li class="ml-2 pl-3">The final product is a web-app in which students can see theirs and their friends' 'Ole scores'–a hand-wavey metric loosely based on one's distance from the model's decision boundary.</li>
+                  <li class="ml-2 pl-3">Training data was taken from each college's directory and LinkedIn.</li>
               </ul>
             </div>
       
-              <div class="flex w-full justify-center text-gray-500">
+              <div class="print:hidden flex w-full justify-center text-gray-500">
                 <i
                   class="ri-arrow-down-s-line block scale-x-[2] scale-y-[.7] duration-700 group-hover:animate-pulse group-focus:rotate-180"
                 ></i>
               </div>
       
           </div>
-          <div class="border-left-2 group transition-all cursor-pointer group-focus:cursor-default" tabindex="0">
+          <div class="border-left-2 group transition-all no-break" tabindex="0">
       
             <div class="grid">
               <h3 class="row-start-1 text-xl">
@@ -349,12 +361,12 @@
               </span>
             </div>
       
-            <p class="italic">Play Wordle head-to-ahead against a bot which simultaneously encourages you and makes fun of you for your bad guesses.</p>
+            <p class="italic">Play Wordle head-to-head against a bot that makes fun of you for your bad guesses.</p>
       
             <div
-              class="max-h-0 overflow-clip pl-3 duration-500 group-focus:max-h-[25vh]"
+              class="max-h-0 print:max-h-screen overflow-clip pl-3 duration-500 group-focus:max-h-[25vh]"
             >
-              <ul class="mb-3 flex justify-center divide-x">
+              <ul class="print:hidden mb-3 flex justify-center divide-x">
                   <li class="my-0 px-2 py-0">
                     <a href="https://github.com/alipatti/chirple">
                       source
@@ -363,20 +375,19 @@
                   </li>
               </ul>
               <ul class="list-['-']">
-                  <li class="ml-2 pl-3">Chirple makes the guess which yields the most expected bits information and makes fun of you if you don&#x27;t.</li>
-                  <li class="ml-2 pl-3">The roasts are taken from ???</li>
-                  <li class="ml-2 pl-3">Under some reasonable assumptions about the words Wordle picks, its guesses can be proven &#x27;optimal&#x27; (in some sense of the word).</li>
+                  <li class="ml-2 pl-3">Chirple makes the guess which yields the most expected information and makes fun of you if you don't.</li>
+                  <li class="ml-2 pl-3">Under some reasonable assumptions, its guesses can be proven 'optimal' (in some sense of the word).</li>
               </ul>
             </div>
       
-              <div class="flex w-full justify-center text-gray-500">
+              <div class="print:hidden flex w-full justify-center text-gray-500">
                 <i
                   class="ri-arrow-down-s-line block scale-x-[2] scale-y-[.7] duration-700 group-hover:animate-pulse group-focus:rotate-180"
                 ></i>
               </div>
       
           </div>
-          <div class="border-left-2 group transition-all cursor-pointer group-focus:cursor-default" tabindex="0">
+          <div class="border-left-2 group transition-all no-break" tabindex="0">
       
             <div class="grid">
               <h3 class="row-start-1 text-xl">
@@ -394,34 +405,41 @@
               </span>
             </div>
       
-            <p class="italic">Introduce the world to the fantasy sport they didn&#x27;t know they needed NCAA Division III cross-country.</p>
+            <p class="italic">NCAA Division III cross-country: The fantasy sport people didn&#x27;t know they needed</p>
       
             <div
-              class="max-h-0 overflow-clip pl-3 duration-500 group-focus:max-h-[25vh]"
+              class="max-h-0 print:max-h-screen overflow-clip pl-3 duration-500 group-focus:max-h-[25vh]"
             >
-              <ul class="mb-3 flex justify-center divide-x">
+              <ul class="print:hidden mb-3 flex justify-center divide-x">
                   <li class="my-0 px-2 py-0">
                     <a href="https://github.com/alipatti/jfrrs">
                       source
                       <i class="ri-external-link-line"></i>
                     </a>
                   </li>
+                  <li class="my-0 px-2 py-0">
+                    <a href="">
+                      JFRRS (coming soon)
+                      <i class="ri-external-link-line"></i>
+                    </a>
+                  </li>
               </ul>
               <ul class="list-['-']">
-                  <li class="ml-2 pl-3">Scrapes up-to-date XC results and allows users to create teams and compete with their friends.</li>
-                  <li class="ml-2 pl-3">Scoring is calculated based on a mix of raw times and relative performance.</li>
-                  <li class="ml-2 pl-3">Built with full-stack TypeScript using NextJS, tRPC, tailwindcss,Prisma, and Vercel.</li>
+                  <li class="ml-2 pl-3">The world's <strong>first</strong> fantasy XC platform.</li>
+                  <li class="ml-2 pl-3">Scrapes up-to-date XC results as soon as they're available and stores them in a relational database.</li>
+                  <li class="ml-2 pl-3">Scoring is calculated based on a mix of athletes' raw times and placement.</li>
+                  <li class="ml-2 pl-3">Built with full-stack TypeScript using NextJS, Prisma, tRPC, tailwindcss, React.</li>
               </ul>
             </div>
       
-              <div class="flex w-full justify-center text-gray-500">
+              <div class="print:hidden flex w-full justify-center text-gray-500">
                 <i
                   class="ri-arrow-down-s-line block scale-x-[2] scale-y-[.7] duration-700 group-hover:animate-pulse group-focus:rotate-180"
                 ></i>
               </div>
       
           </div>
-          <div class="border-left-2 group transition-all cursor-pointer group-focus:cursor-default" tabindex="0">
+          <div class="border-left-2 group transition-all no-break" tabindex="0">
       
             <div class="grid">
               <h3 class="row-start-1 text-xl">
@@ -442,9 +460,9 @@
             <p class="italic">You&#x27;re looking at it.</p>
       
             <div
-              class="max-h-0 overflow-clip pl-3 duration-500 group-focus:max-h-[25vh]"
+              class="max-h-0 print:max-h-screen overflow-clip pl-3 duration-500 group-focus:max-h-[25vh]"
             >
-              <ul class="mb-3 flex justify-center divide-x">
+              <ul class="print:hidden mb-3 flex justify-center divide-x">
               </ul>
               <ul class="list-['-']">
                   <li class="ml-2 pl-3">Loads data from a yaml file, allowing for easy updates without worrying about how they will affect layout.</li>
@@ -453,20 +471,20 @@
               </ul>
             </div>
       
-              <div class="flex w-full justify-center text-gray-500">
+              <div class="print:hidden flex w-full justify-center text-gray-500">
                 <i
                   class="ri-arrow-down-s-line block scale-x-[2] scale-y-[.7] duration-700 group-hover:animate-pulse group-focus:rotate-180"
                 ></i>
               </div>
       
           </div>
-      </section>  
+      </section>      
       <section class="mt-10 grid gap-4">
         <div class="-ml-4">
           <h2 class="text-3xl font-bold capitalize small-caps">interests</h2>
           <hr class="mt-3 w-1/4" />
         </div>
-          <div class="border-left-2 group transition-all cursor-pointer group-focus:cursor-default" tabindex="0">
+          <div class="border-left-2 group transition-all no-break" tabindex="0">
       
             <div class="grid">
               <h3 class="row-start-1 text-xl">
@@ -487,9 +505,9 @@
             <p class="italic">Member of Carleton varsity Track and Field.</p>
       
             <div
-              class="max-h-0 overflow-clip pl-3 duration-500 group-focus:max-h-[25vh]"
+              class="max-h-0 print:max-h-screen overflow-clip pl-3 duration-500 group-focus:max-h-[25vh]"
             >
-              <ul class="mb-3 flex justify-center divide-x">
+              <ul class="print:hidden mb-3 flex justify-center divide-x">
               </ul>
               <ul class="list-['-']">
                   <li class="ml-2 pl-3">Three-time MIAC conference finalist at 800m; two-time second-team all-conference; four-time academic all-conference.</li>
@@ -497,14 +515,14 @@
               </ul>
             </div>
       
-              <div class="flex w-full justify-center text-gray-500">
+              <div class="print:hidden flex w-full justify-center text-gray-500">
                 <i
                   class="ri-arrow-down-s-line block scale-x-[2] scale-y-[.7] duration-700 group-hover:animate-pulse group-focus:rotate-180"
                 ></i>
               </div>
       
           </div>
-          <div class="border-left-2 group transition-all " tabindex="0">
+          <div class="border-left-2 group transition-all no-break" tabindex="0">
       
             <div class="grid">
               <h3 class="row-start-1 text-xl">
@@ -525,9 +543,9 @@
             <p class="italic"></p>
       
             <div
-              class="max-h-0 overflow-clip pl-3 duration-500 group-focus:max-h-[25vh]"
+              class="max-h-0 print:max-h-screen overflow-clip pl-3 duration-500 group-focus:max-h-[25vh]"
             >
-              <ul class="mb-3 flex justify-center divide-x">
+              <ul class="print:hidden mb-3 flex justify-center divide-x">
               </ul>
               <ul class="list-['-']">
               </ul>
@@ -535,7 +553,7 @@
       
       
           </div>
-          <div class="border-left-2 group transition-all " tabindex="0">
+          <div class="border-left-2 group transition-all no-break" tabindex="0">
       
             <div class="grid">
               <h3 class="row-start-1 text-xl">
@@ -556,9 +574,9 @@
             <p class="italic"></p>
       
             <div
-              class="max-h-0 overflow-clip pl-3 duration-500 group-focus:max-h-[25vh]"
+              class="max-h-0 print:max-h-screen overflow-clip pl-3 duration-500 group-focus:max-h-[25vh]"
             >
-              <ul class="mb-3 flex justify-center divide-x">
+              <ul class="print:hidden mb-3 flex justify-center divide-x">
               </ul>
               <ul class="list-['-']">
               </ul>
@@ -566,7 +584,8 @@
       
       
           </div>
-      </section>    <hr class="w-3/4 mx-auto my-3" />
+      </section>
+    <hr class="w-3/4 mx-auto my-3" />
     <footer>
       <ul id="links" class="flex gap-8 mx-auto justify-center">
         <li>
@@ -589,6 +608,7 @@
         </li>
       </ul>
     </footer>
+
 </body>
 
 </html>

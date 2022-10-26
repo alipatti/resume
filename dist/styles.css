@@ -609,6 +609,10 @@ video {
   grid-row-start: 2;
 }
 
+.m-24{
+  margin: 6rem;
+}
+
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
@@ -680,6 +684,10 @@ video {
   width: 100%;
 }
 
+.max-w-5xl{
+  max-width: 64rem;
+}
+
 .scale-x-\[2\]{
   --tw-scale-x: 2;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -688,10 +696,6 @@ video {
 .scale-y-\[\.7\]{
   --tw-scale-y: .7;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.cursor-pointer{
-  cursor: pointer;
 }
 
 .list-\[\'-\'\]{
@@ -730,6 +734,19 @@ video {
 
 .overflow-clip{
   overflow: clip;
+}
+
+.border{
+  border-width: 1px;
+}
+
+.border-gray-300{
+  --tw-border-opacity: 1;
+  border-color: rgb(209 213 219 / var(--tw-border-opacity));
+}
+
+.p-24{
+  padding: 6rem;
 }
 
 .px-2{
@@ -819,6 +836,7 @@ video {
 }
 
 html {
+  box-sizing: content-box;
   font-family: "Karla", "serif";
   /* font-family: "LMRoman10", "Times New Roman", Times, serif; */
 }
@@ -838,21 +856,19 @@ html {
     font-size: 10pt;
   }
 
-  body {
-    padding: 1in;
-    height: 11in;
-    width: 8.5in;
+  @page {
+    size: portrait;
+
+    margin: 1in 0in;
+  }
+
+  @page: first{
+    margin-top: 0in;
   }
 }
 
-@media screen {
-  body {
-    border: 1px solid grey;
-    box-sizing: content-box;
-    padding: 1in;
-    max-width: 8.5in;
-    margin: 5rem auto;
-  }
+.no-break-inside {
+  page-break-inside: avoid;
 }
 
 @-webkit-keyframes pulse{
@@ -881,6 +897,24 @@ html {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.group:focus .group-focus\:cursor-default{
-  cursor: default;
+@media print{
+  .print\:m-0{
+    margin: 0px;
+  }
+
+  .print\:hidden{
+    display: none;
+  }
+
+  .print\:max-h-screen{
+    max-height: 100vh;
+  }
+
+  .print\:border-none{
+    border-style: none;
+  }
+
+  .print\:p-\[1in\]{
+    padding: 1in;
+  }
 }

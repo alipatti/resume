@@ -18,6 +18,7 @@
 @tailwind utilities;
 
 html {
+  box-sizing: content-box;
   font-family: "Karla", "serif";
   /* font-family: "LMRoman10", "Times New Roman", Times, serif; */
 }
@@ -36,19 +37,17 @@ html {
   :root {
     font-size: 10pt;
   }
-  body {
-    padding: 1in;
-    height: 11in;
-    width: 8.5in;
+
+  @page {
+    size: portrait;
+    margin: 1in 0in;
   }
+
+  @page: first{
+    margin-top: 0in;
+  };
 }
 
-@media screen {
-  body {
-    border: 1px solid grey;
-    box-sizing: content-box;
-    padding: 1in;
-    max-width: 8.5in;
-    margin: 5rem auto;
-  }
+.no-break-inside {
+  page-break-inside: avoid;
 }
