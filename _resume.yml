@@ -30,20 +30,21 @@ sections:
         - Real Analysis I - MATH 321
         - Combinatorics - MATH 333
         - Abstract Algebra - MATH 342
-        - Representation Theory  - MATH 352
-        - Analytic Number Theory - MATH 395
+        # - Advanced Linear Algebra - MATH ???
+        # - Representation Theory  - MATH 352
+        # - Elementary Analytic Number Theory - MATH 395
         - Algorithms - CS 252
-        - Artificial Intelligence - CS 321
+        # - Artificial Intelligence - CS 321
+        # - Data Visualization - CS ???
         - Natural Language Processing - CS 322
         - Cryptography - CS 341
         - Advanced Algorithms - CS 352
         - Quantum Computing - CS 358
-        # - Data Visualization - CS XXX
+        # - Public-sector Economics - ECON 270
         - Labor Economics - ECON 274
-        - Public-sector Economics - ECON 27?
-        # - Price Theory - ECON ???
+        # - Statistical Inference - STAT 250
 
-    - title: History of Computing
+    - title: History of Computing Program
       institution: Carleton College Off Campus Studies
       location: Cambridge, England
       date: [2022-06, 2022-08]
@@ -56,98 +57,132 @@ sections:
       summary: Completed selective high-school math program culminating in six semesters of linear algebra, vector calculus, differential equations, and set theory.
 
   work:
-    - title: Researcher
+    - title: Research Assistant
       subtitle: Privacy and Cryptography Lab
       institution: University of Minnesota
       location: Minneapolis, Minnesota
       date: [2022-09, null]
-      summary: Extend recent results in cryptography involving message-reporting in end-to-end encrypted messaging services. Supervised by Professor Nicholas Hopper.
+      summary: Improved a recent cryptographic protocol for securely reporting abusive messages in end-to-end encrypted messaging services (e.g. WhatsApp, Signal, Facebook Messenger). To be presented at IEEE Symposium on Security and Privacy 2023.
       bullets:
-        - Removed assumptions of moderator honesty by implementing a committee moderation system based on distributed Schnorr signatures and threshold ElGamal encryption.
-        # - Removed the platform's responsibility while retaining all the security guarantees of previous papers, meaning that my system can be implemented today on top of vanilla Signal or WhatsApp with no modification of the underlying EEMS.
-        # - Implemented improvements in Rust and benchmarked the implementation against the protocols described in previous works.
-        # - Preprint available at ??? (submitted to ???, ???).
+        - Developed a distributed moderation system based on threshold cryptography that both improves the protocol's security and helps the moderation system resolve whether or not to act on a reported message.
+        - Implemented the modified protocol in Rust and benchmarked its performance against the existing literature.
+        - Advised by Professor Nicholas Hopper.
       links:
-        - implementation: https://github.com/alipatti/hecate
-        - preprint: null
+        implementation: https://github.com/alipatti/cerberus
+        # "preprint (in progress)": "#"
+      #   "extended abstract": "#"
 
     - title: Teaching Assistant
-      subtitle: Mathematics and Computer Science Departments
+      subtitle: Math and Computer Science Departments
       institution: Carleton College
       location: Northfield, Minnesota
       date: [2021-03, null]
-      summary: Lead study sessions, hold office hours, tutor students, and grade homework for math and computer science classes.
+      summary: Lead study sessions, hold office hours, tutor students, and grade homework for math and CS classes including Algorithms and Artificial Intelligence.
       bullets:
-        # - Data Visualization - CS XXX
         - Artificial Intelligence - CS 321
+        # - Data Visualization - CS XXX
         - Algorithms - CS 252
         - Math Structures - MATH 236
         - Calculus II - MATH 120
 
-    - title: "'The Food Guy'"
+    - title: "<emph>The Food Guy</emph>"
       institution: YMCA Camp Widjiwagan
       location: Ely, Minnesota
       date: [2021-06, 2021-08]
-
       summary: Managed the purchase and distribution of food for nearly 200 multi-week wilderness trips across five US states and four Canadian provinces.
       bullets:
         - Supervised up to four other employees in fast-paced environment.
-        - Lead a week-long canoeing trip with Boys Outdoor Leadership Development, a program geared towards making the outdoors more diverse and financially accessible.
-        - Collaborated closely in a team of three to ensure all outgoing groups' needs were met.
+        - Worked with two others to manage a $95,000 budget.
+        - Lead a seven-night canoeing trip with Boys Outdoor Leadership Development, a program geared towards making the outdoors more diverse and financially accessible.
+
+    - title: Dining Hall Worker
+      institution: Bon Appetit Carleton
+      location: Northfield, MN
+      date: [2020-09, 2021-03]
+      summary: Made pizzas, served food, and cleaned in campus dining hall.
 
   projects:
     - title: Ole or Carl?
-      summary: A machine learning model which classifies St. Olaf and Carleton students with 67 percent accuracy based exclusively on faces.
+      summary: A machine learning model that distinguishes faces of St. Olaf and Carleton students based on state-of-the art vector embeddings.
       bullets:
         - Originally built as a joke to refute claims that I look like an Ole and test the validity of a long-standing stereotype that students from the two colleges look meaningfully different.
-        - Under the hood the model uses a linear support-vector classifier on vector embeddings of students' faces.
-        - The final product is a web-app in which students can see theirs and their friends' 'Ole scores'–a hand-wavey metric loosely based on one's distance from the model's decision boundary.
-        - Training data was taken from each college's directory and LinkedIn.
+        - Under the hood the model uses a linear support-vector machine to classify state-of-the art face embeddings produced by a pre-trained resnet model from the dlib C++ library. It achieves ~65% cross-validated accuracy which, while not fantastic, is meaningfully better than random choice.
+        - The final product is a web-app in which students can search and see their friends' 'Ole scores'–a hand-wavey metric loosely based on the distance of one's face embedding from the model's decision boundary.
+        - Training data was scraped from each college's directory and LinkedIn.
       keywords: [machine learning, vector embeddings, SVM, web scraping]
       date: [2022-05, 2022-06]
       links:
-        source: https://github.com/alipatti/oleorcarl
-        web-app: https://github.com/alipatti/oleorcarl
+        github: https://github.com/alipatti/oleorcarl
+        live: https://github.com/alipatti/oleorcarl
+
+    - title: JFRRS
+      summary: "NCAA Division III cross-country: The fantasy sport you didn't know you needed."
+      bullets:
+        - The world's <strong>first</strong> fantasy XC platform <small>(...as far as I know)</small>.
+        - Scrapes more than a million XC results and assigns a score to every performance based on a mix of raw time and relative placement.
+        - Built with full-stack TypeScript using NextJS 13 and Prisma.
+        - "<strong>In progress:</strong> Allow users to draft teams, make leagues, and compete with their friends."
+        - "<strong>In progress:</strong> Predict end-of-season performance using a sequence-based ML model."
+      links:
+        github: https://github.com/alipatti/jfrrs
+      date: null
 
     - title: Chirple
       summary: Play Wordle head-to-head against a bot that makes fun of you for your bad guesses.
       bullets:
-        - Chirple makes the guess which yields the most expected information and makes fun of you if you don't.
-        - Under some reasonable assumptions, its guesses can be proven 'optimal' (in some sense of the word).
+        - Chirple makes the guess that yields the most expected information (in Shannon's sense of the word) and makes fun of you if you don't. Under some reasonable assumptions, Chirple's guesses can be proven optimal.
+        - Inspiration for insults was taken from the (very creative) mouths of collegiate sideline hecklers.
       keywords: [information theory, numpy, python, Flask]
       date: [2022-05, 2022-06]
       links:
-        source: https://github.com/alipatti/chirple
+        github: https://github.com/alipatti/chirple
 
-    - title: JFRRS
-      summary: "NCAA Division III cross-country: The fantasy sport people didn't know they needed"
-      bullets:
-        - The world's <strong>first</strong> fantasy XC platform.
-        - Scrapes up-to-date XC results as soon as they're available and stores them in a relational database.
-        - Scoring is calculated based on a mix of athletes' raw times and placement.
-        - Built with full-stack TypeScript using NextJS, Prisma, tRPC, tailwindcss, React.
-      links:
-        source: https://github.com/alipatti/jfrrs
-        JFRRS (coming soon): null
+    - title: Smart Mirror
+      summary: TODO
       date: null
 
-    - title: Resume
+    - title: doo-doo
+      summary: A shitty command-line app to keep track of your todo list. Built in Rust.
+      date: null
+
+    - title: YAML Resume
       summary: You're looking at it.
-      bullets:
-        - Loads data from a yaml file, allowing for easy updates without worrying about how they will affect layout.
-        - Allows for flexible presentation of skills and experience. Notice how only some of the sections have bullets or links?
-        - Formats differently for web and print. (Try hitting cmd + p!)
+      links:
+        github: https://github.com/alipatti/resume
+
+  skills:
+    - title: Languages
+      lists:
+        fluent:
+          - Python
+          - JavaScript
+          - TypeScript
+          - CSS/HTML
+          - English
+        proficient:
+          - Rust
+          - bash
+        passable:
+          - Java
+          # - R
+          - Spanish
+
+    - title: Other
+      lists:
+        frameworks:
+          - React
+          - Next.js
+          - Django
+          - Flask
+        techs:
+          - git
+          - Docker
+          -
 
   interests:
     - title: Running
-      summary: Member of Carleton varsity Track and Field.
-      bullets:
-        - Three-time MIAC conference finalist at 800m; two-time second-team all-conference; four-time academic all-conference.
-        - Minnesota state-meet qualifier, 2019.
+      summary: Member of Carleton varsity Track and Field. Three-time MIAC conference finalist at 800m; two-time all-conference second team.
 
     - title: Photography
-    # TODO add bullets linking to photos
 
     - title: Piano
-
-    # TODO add short summary

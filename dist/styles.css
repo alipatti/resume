@@ -1,6 +1,6 @@
 @import url("https://fonts.cdnfonts.com/css/latin-modern-roman");
 
-@import url("https://fonts.googleapis.com/css2?family=family=Karla:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,700&display=swap");
 
 @import url("https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css");
 
@@ -597,6 +597,40 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.container{
+  width: 100%;
+}
+
+@media (min-width: 640px){
+  .container{
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px){
+  .container{
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px){
+  .container{
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px){
+  .container{
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px){
+  .container{
+    max-width: 1536px;
+  }
+}
+
 .relative{
   position: relative;
 }
@@ -658,6 +692,10 @@ video {
 
 .inline-block{
   display: inline-block;
+}
+
+.inline{
+  display: inline;
 }
 
 .flex{
@@ -859,10 +897,10 @@ html {
   @page {
     size: portrait;
 
-    margin: 1in 0in;
+    margin: 0.8in 0in;
   }
 
-  @page: first{
+  @page: first {
     margin-top: 0in;
   }
 }
@@ -888,8 +926,48 @@ html {
           animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
-.group:focus .group-focus\:max-h-\[25vh\]{
-  max-height: 25vh;
+.group:focus .group-focus\:max-h-\[39em\]{
+  max-height: 39em;
+}
+
+.group:focus .group-focus\:max-h-\[0em\]{
+  max-height: 0em;
+}
+
+.group:focus .group-focus\:max-h-\[9em\]{
+  max-height: 9em;
+}
+
+.group:focus .group-focus\:max-h-\[12em\]{
+  max-height: 12em;
+}
+
+.group:focus .group-focus\:max-h-\[17em\]{
+  max-height: 17em;
+}
+
+.group:focus .group-focus\:max-h-\[11em\]{
+  max-height: 11em;
+}
+
+.group:focus .group-focus\:max-h-\[14em\]{
+  max-height: 14em;
+}
+
+.group:focus .group-focus\:max-h-\[5em\]{
+  max-height: 5em;
+}
+
+.group:focus .group-focus\:max-h-\[27em\]{
+  max-height: 27em;
+}
+
+.group:focus .group-focus\:max-h-\[20em\]{
+  max-height: 20em;
+}
+
+.group:focus .group-focus\:max-h-\[8em\]{
+  max-height: 8em;
 }
 
 .group:focus .group-focus\:rotate-180{
@@ -902,6 +980,10 @@ html {
     margin: 0px;
   }
 
+  .print\:mt-5{
+    margin-top: 1.25rem;
+  }
+
   .print\:hidden{
     display: none;
   }
@@ -910,11 +992,19 @@ html {
     max-height: 100vh;
   }
 
+  .print\:gap-2{
+    gap: 0.5rem;
+  }
+
   .print\:border-none{
     border-style: none;
   }
 
   .print\:p-\[1in\]{
     padding: 1in;
+  }
+
+  .print\:font-bold{
+    font-weight: 700;
   }
 }
